@@ -1,0 +1,26 @@
+{
+  "name": "keyword-match",
+  "version": "0.0.1",
+  "description": "keyword or phrases common in two or more texts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbvyas/keyword-match.git"
+  },
+  "author": "vbvyas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vbvyas/keyword-match/issues"
+  },
+  "homepage": "https://github.com/vbvyas/keyword-match#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2",
+    "stopword": "^0.1.1",
+    "sugar": "^2.0.4"
+  }
+}

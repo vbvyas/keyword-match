@@ -1,0 +1,55 @@
+doctype 5
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='') 
+    link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css", rel="stylesheet", media='screen')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")    
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css", rel="stylesheet")    
+    link(rel='stylesheet', href='/css/app.css')
+    //
+       Le HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    script.
+      <!--
+      (function() {
+          if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+              var msViewportStyle = document.createElement("style");
+              msViewportStyle.appendChild(
+                  document.createTextNode("@-ms-viewport{width:auto!important}")
+              );
+              document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+          }
+      })(); 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://unpkg.com/vue@2.3.3")
+      //--> 
+    block extra_head        
+  body
+    div.navbar.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            talentlandr
+        div.collapse.navbar-collapse#navbar-main
+          ul.nav.navbar-nav.pull-right
+            li
+              a(href='/') Usage
+            li
+              a(href='/') FAQ
+            li
+              a.btn.btn-primary(href='/', title='Login') Login
+
+    div.container
+      block content
+          
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js")
