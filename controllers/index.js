@@ -6,7 +6,7 @@ function index(req, res) {
 
 function compare(req, res) {
     let matcher = new Matcher(req.body.text1, req.body.text2)
-    res.json(matcher.match().concat(matcher.match(2)).concat(matcher.match(3)))
+    res.json(matcher.match())
 }
 
 module.exports = {
